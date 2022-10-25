@@ -1,0 +1,70 @@
+.header {
+    background-color: #140c2d;
+    padding:30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .navigation {
+    display: flex;
+}
+
+.header .navigation-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.header .navigation__item {
+    margin: 10px 16px;
+}
+
+.header .navigation__item a {
+    color:#fff;
+    text-decoration: none;
+    position: relative;
+    transition: 0.5s;
+    padding: 40px 0;
+    padding-right: 17px;
+}
+.header .navigation__item a::before {
+    font-family: "Material Icons";
+    position: absolute;
+    content: "\e5cf";
+    line-height: 1;
+    right: -4px;
+    top: 43px;
+    font-size: 20px;
+}
+
+.header .navigation__item a::after {
+    right: 0;
+    width: 0;
+    border: 0;
+    height: 2px;
+    content: "";
+    bottom: 38px;
+    margin-left: 0;
+    position: absolute;
+    vertical-align: unset;
+     transition: 0.5s; 
+    background: linear-gradient(135deg,#FA26CA 0%,#712AF9 100%);
+}
+
+.header .navigation__item a:hover::after {
+    right: auto;
+    width: 100%;
+    left: 0;
+
+}
+
+.header .navigation__button {
+
+    cursor: pointer;
+    padding: 14px 30px 15px;
+    background: linear-gradient(135deg,#FA26CA 0%,#712AF9 100%);
+    font-weight: 700;
+    color: #fff;
+    border-radius: 6px;
+    text-align: center;
+}
