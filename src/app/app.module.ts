@@ -7,10 +7,20 @@ import { HeaderComponent } from './header/header.component';
 import { BannerComponent } from './banner/banner.component';
 import { ArticleComponent } from './article/article.component';
 import { HomeComponent } from './home/home.component';
+import { BlogDetailComponent } from './blog-detail/blog-detail.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { BlogComponent } from './blog/blog.component';
+import { ProjectComponent } from './project/project.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 
 const appRoutes: Routes = [
    { path: 'article', component: ArticleComponent },
    { path: 'home', component: HomeComponent },
+   { path: 'about-me', component: AboutMeComponent },
+   { path: 'blog-detail', component: BlogDetailComponent },
+   { path: 'contact-me', component: ContactMeComponent },
+   { path: 'blog', component: BlogComponent },
+   { path: 'project', component: ProjectComponent },
   // { path: 'hero/:id',      component: HeroDetailComponent },
     { path: '',
     redirectTo: '/home',
@@ -26,7 +36,12 @@ const appRoutes: Routes = [
     HeaderComponent,
     BannerComponent,
     ArticleComponent,
-    HomeComponent
+    HomeComponent,
+    BlogDetailComponent,
+    AboutMeComponent,
+    BlogComponent,
+    ProjectComponent,
+    ContactMeComponent
  ],
   imports: [
     BrowserModule,

@@ -1,0 +1,121 @@
+.banner {
+    background-image: url(../../assets/images/banner-bg-5.png);
+    padding: 200px 50px 0px 50px;
+    /* height: 100vh; */
+    display: flex;
+    position: relative;
+
+}
+
+.banner .banner-gif {
+    position: absolute;
+    left: 0;
+    max-width: 235px;
+    right: 0;
+    top: 30px;
+    opacity: 1;
+    left: 220px;
+    margin: auto;
+    max-width: 300px;
+    border-radius: 50%;
+}
+.banner .banner-gif img {
+    width:100%;
+}
+
+.banner-content {
+    width: 50%;
+    z-index: 2;
+    padding-bottom: 70px;
+}
+
+.banner .banner-shape {
+    position: absolute;
+    height: 100%;
+    /* z-index: -1; */
+}
+
+.banner .shape-1 {
+    left: auto;
+    right: 0;
+    top: 0;
+    display: none; 
+}
+
+.banner .shape-2 {
+    right: auto;
+    left: 0;
+    top: 0;
+}
+
+.banner-content .content__flag {
+    font-size: 18px;
+    background: linear-gradient(90.99deg,#FDCE39 .27%,#FD8963 30%,#ED5174 98.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.banner-content .content__title {
+    color:#fff;
+    /* font-size: 65px;
+    line-height: 80px; */
+    font-size: 57px;
+    line-height: 63px;
+    margin-bottom: 20px;
+}
+
+.banner-content .content__description {
+    color: #beb8cc;
+}
+
+.banner .content__button-buy {
+    cursor: pointer;
+    padding: 14px 30px 15px;
+    margin-top: 20px;
+    /* background: linear-gradient(135deg,#FA26CA 0%,#712AF9 100%); */
+    background: linear-gradient(98.28deg,#FDCE39 2.11%,#FD8963 30.92%,#ED5174 97.49%);
+    font-weight: 700;
+    color: #fff;
+    border-radius: 6px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    font-size: 16px;
+}
+
+.banner .content__button-buy::before {
+    top: 0;
+    right: 0;
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 6px;
+    transform: scaleX(0);
+    transition: 0.5s;
+    background: linear-gradient(135deg,#FA26CA 0%,#712AF9 100%);
+    /* background: linear-gradient(98.28deg,#FDCE39 2.11%,#FD8963 30.92%,#ED5174 97.49%); */
+}
+
+.banner .content__button-buy:hover::before {
+     transform: scaleX(1);
+}
+
+.banner-image {
+    position: absolute;
+    text-align: end;
+    bottom: -11px;
+    right: 0;
+}
+
+.banner-image img {
+    max-width: 100%;
+    height:auto;
+    width: 70%;
+}

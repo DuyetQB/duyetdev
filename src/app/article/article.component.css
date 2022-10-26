@@ -1,0 +1,95 @@
+.article {
+    background-color: #1A1135;
+    padding: 120px 50px 50px 50px;
+}
+
+.article .section-title {
+    margin: -5px auto 50px;
+    text-align: center;
+    position: relative;
+    max-width: 755px;
+    z-index: 1;
+}
+
+.article .section-title .title {
+    margin-bottom: 12px;
+    display: inline-block;
+    letter-spacing: .1em;
+    color: #712af9;
+    background: linear-gradient(90.99deg,#FDCE39 .27%,#FD8963 30%,#ED5174 98.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* font-family: var(--headingFontFamily); */
+    font-weight: 600;
+}
+
+.article .section-title h2 {
+    color:#fff;
+    font-size: 55px;
+}
+
+.article .section-list {
+    display: flex;
+}
+
+.article .section-list__item img {
+    border-radius: 30px;
+    width: 340px;
+}
+.article .section-list__item .blog-content {
+    border-left: 1px solid #534a70;
+    padding-left: 30px;
+    margin-top: 30px;
+    margin-right: 50px;
+    color: #fff;
+}
+
+.article .blog-content span {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 12px;
+    letter-spacing: .1em;
+}
+.article .blog-content__link {
+    color:#fff;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.article .blog-content__link:hover {
+    color:var(--primaryColor);
+}
+
+.article .block-content__readmore {
+    transition: 0.5s;
+    background: linear-gradient(135deg,#FA26CA 0%,#712AF9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+    background-clip: text;
+    display: inline-block;
+    letter-spacing: .1em;
+    position: relative;
+    z-index: 1;
+    font-weight: 600;
+}
+
+.article .block-content__readmore::before {
+    right: 0;
+    width: 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    position: absolute;
+    transition: 0.5s;
+    background: linear-gradient(135deg,#FA26CA 0%,#712AF9 100%);
+}
+
+.article .block-content__readmore:hover::before {
+    right: auto;
+    width: 100%;
+    left: 0;
+}

@@ -7,3 +7,7 @@
 html {
     font-family: 'Changa', sans-serif;
 }
+
+:root {
+    --primaryColor: #712af9;
+}

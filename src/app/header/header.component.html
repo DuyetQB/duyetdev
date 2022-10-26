@@ -1,17 +1,17 @@
 <div class="header">
-    <a href="/">
-        <img src="../../assets/images/logo.png" alt="">
+    <a href="/" class="header-link">
+        <img src="../../assets/images/duyetdev-logo.png" alt="" class="header-link__image">
     </a>
     <nav class="navigation">
         <ul class="navigation-list">
-            <li class="navigation__item"><a href="">Home</a></li>
-            <li class="navigation__item"><a href="">About Us</a></li>
-            <li class="navigation__item"><a href="">Project</a></li>
-            <li class="navigation__item"><a href="">Blog</a></li>
-            <li class="navigation__item"><a href="">Contact Us</a></li>
+            <li class="navigation__item"><a routerLink="home" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{exact:true}">Home</a></li>
+            <li class="navigation__item"><a routerLink="about-me" routerLinkActive="router-link-active">About Me</a></li>
+            <li class="navigation__item"><a routerLink="project" routerLinkActive="router-link-active">Project</a></li>
+            <li class="navigation__item"><a routerLink="blog" routerLinkActive="router-link-active">Blog</a></li>
+            <li class="navigation__item"><a routerLink="contact-me" routerLinkActive="router-link-active">Contact Me</a></li>
         </ul>
         <div class="navigation-option">
-            <button class="navigation__button">Login</button>
+            <button class="navigation__button">Give Me A Hug</button>
         </div>
     </nav>
 </div>
