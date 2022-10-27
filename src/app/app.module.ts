@@ -12,6 +12,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { BlogComponent } from './blog/blog.component';
 import { ProjectComponent } from './project/project.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
+import { LayoutComponent } from './layout/layout.component';
 
 const appRoutes: Routes = [
    { path: 'article', component: ArticleComponent },
@@ -21,7 +22,7 @@ const appRoutes: Routes = [
    { path: 'contact-me', component: ContactMeComponent },
    { path: 'blog', component: BlogComponent },
    { path: 'project', component: ProjectComponent },
-  // { path: 'hero/:id',      component: HeroDetailComponent },
+  //  { path: 'blog-detail/:id', component: BlogDetailComponent },
     { path: '',
     redirectTo: '/home',
     pathMatch: 'full'
@@ -41,7 +42,8 @@ const appRoutes: Routes = [
     AboutMeComponent,
     BlogComponent,
     ProjectComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    LayoutComponent
  ],
   imports: [
     BrowserModule,

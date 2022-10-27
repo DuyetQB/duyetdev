@@ -1,1 +1,28 @@
-<p>blog-detail works!</p>
+<article class="blog-detail">
+  <div class="blog-item item-1">
+    <img
+      src="../../assets/images/setup-team-1.png"
+      alt=""
+      (click)="getImage($event)"
+    />
+  </div>
+  <div class="blog-item item-2">
+    <img src="../../assets/images/Metavereteam-a.png" alt=""   (click)="getImage($event)"/>
+  </div>
+  <div class="blog-item item-3">
+    <img src="../../assets/images/setup-team-2.png" alt=""   (click)="getImage($event)"/>
+  </div>
+  <div class="blog-item item-4">
+    <img src="../../assets/images/team-relax.png" alt=""   (click)="getImage($event)"/>
+  </div>
+  <div class="blog-item item-5">
+    <img src="../../assets/images/team-working.png" alt=""   (click)="getImage($event)"/>
+  </div>
+  <div class="blog-item item-6">
+    <img src="../../assets/images/Teams-heg.png" alt=""   (click)="getImage($event)"/>
+  </div>
+</article>
+<div class="box-content" *ngIf="showDiv.isShow">
+  <img src="{{ showDiv.imageSrc }}" alt="" />
+  <span class="material-symbols-outlined icon-close" (click)="onClose()"> close </span>
+</div>

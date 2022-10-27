@@ -12,4 +12,18 @@ export class BlogDetailComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showDiv = {
+    isShow : false,
+    imageSrc:''
+  }
+
+  getImage(value:any) {
+    this.showDiv.isShow = !this.showDiv.isShow;
+    this.showDiv.imageSrc = value.target.src;
+  }
+
+  onClose() {
+    this.showDiv.isShow = false
+  }
+
 }

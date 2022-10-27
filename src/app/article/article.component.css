@@ -20,7 +20,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    /* font-family: var(--headingFontFamily); */
     font-weight: 600;
 }
 
@@ -75,6 +74,7 @@
     position: relative;
     z-index: 1;
     font-weight: 600;
+    margin-top: 16px;
 }
 
 .article .block-content__readmore::before {
@@ -92,4 +92,14 @@
     right: auto;
     width: 100%;
     left: 0;
+}
+
+@media screen and (max-width:900px) {
+    .article .section-list {
+        flex-wrap: wrap;
+    }
+
+    .article .section-list__item {
+       margin: 20px 0;
+    }
 }
