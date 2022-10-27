@@ -12,7 +12,6 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { BlogComponent } from './blog/blog.component';
 import { ProjectComponent } from './project/project.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
-import { LayoutComponent } from './layout/layout.component';
 
 const appRoutes: Routes = [
    { path: 'article', component: ArticleComponent },
@@ -43,7 +42,6 @@ const appRoutes: Routes = [
     BlogComponent,
     ProjectComponent,
     ContactMeComponent,
-    LayoutComponent
  ],
   imports: [
     BrowserModule,
@@ -57,17 +55,4 @@ const appRoutes: Routes = [
   bootstrap: [AppComponent]
 })
 
-// @NgModule({
-//   declarations: [
-//     AppComponent,
-//     HeaderComponent,
-//     BannerComponent,
-//     ArticleComponent
-//   ],
-//   imports: [
-//     BrowserModule
-//   ],
-//   providers: [],
-//   bootstrap: [AppComponent]
-// })
 export class AppModule { }

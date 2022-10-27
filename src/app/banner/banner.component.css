@@ -1,7 +1,6 @@
 .banner {
     background-image: url(../../assets/images/banner-bg-5.png);
     padding: 200px 50px 0px 50px;
-    /* height: 100vh; */
     display: flex;
     position: relative;
 
@@ -62,8 +61,6 @@
 
 .banner-content .content__title {
     color:#fff;
-    /* font-size: 65px;
-    line-height: 80px; */
     font-size: 57px;
     line-height: 63px;
     margin-bottom: 20px;
@@ -77,7 +74,6 @@
     cursor: pointer;
     padding: 14px 30px 15px;
     margin-top: 20px;
-    /* background: linear-gradient(135deg,#FA26CA 0%,#712AF9 100%); */
     background: linear-gradient(98.28deg,#FDCE39 2.11%,#FD8963 30.92%,#ED5174 97.49%);
     font-weight: 700;
     color: #fff;
@@ -100,7 +96,6 @@
     transform: scaleX(0);
     transition: 0.5s;
     background: linear-gradient(135deg,#FA26CA 0%,#712AF9 100%);
-    /* background: linear-gradient(98.28deg,#FDCE39 2.11%,#FD8963 30.92%,#ED5174 97.49%); */
 }
 
 .banner .content__button-buy:hover::before {
