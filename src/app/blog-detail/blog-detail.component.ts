@@ -14,12 +14,20 @@ export class BlogDetailComponent implements OnInit {
 
   showDiv = {
     isShow : false,
-    imageSrc:''
+    imageSrc:'',
+    title:''
   }
 
   getImage(value:any) {
+    let idSeven = value.target.parentElement.id;
     this.showDiv.isShow = !this.showDiv.isShow;
     this.showDiv.imageSrc = value.target.src;
+    if(idSeven) {
+      this.showDiv.title = "Đây là tui khi đeo kính Hololens 2 dô";
+      return;
+    }
+    this.showDiv.title = ""
+
   }
 
   onClose() {

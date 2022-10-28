@@ -21,8 +21,15 @@
   <div class="blog-item item-6">
     <img src="../../assets/images/Teams-heg.png" alt=""   (click)="getImage($event)"/>
   </div>
+  <div class="blog-item item-7" id="seven">
+    <img src="../../assets/images/me-wear-hololens2.jpg" alt="Đeo kính hololen 2 dô"   (click)="getImage($event)"/>
+  </div>
+  <div class="blog-item item-8" >
+    <img src="../../assets/images/me-vs-lab.jpg" alt=""   (click)="getImage($event)"/>
+  </div>
 </article>
 <div class="box-content" *ngIf="showDiv.isShow">
   <img src="{{ showDiv.imageSrc }}" alt="" />
+  <span class="text-title">{{ showDiv.title }}</span>
   <span class="material-symbols-outlined icon-close" (click)="onClose()"> close </span>
 </div>
