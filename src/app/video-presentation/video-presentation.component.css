@@ -162,7 +162,12 @@
         right: 12%;
     }
     .background .box-content iframe {
-        width:100%;
+        width: 329px;
      
+     }
+
+     .background .box-content .icon-close {
+        right: 33%;
+        top: 3px;
      }
  }
