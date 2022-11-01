@@ -12,6 +12,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { BlogComponent } from './blog/blog.component';
 import { ProjectComponent } from './project/project.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
+import { VideoPresentationComponent } from './video-presentation/video-presentation.component';
 
 const appRoutes: Routes = [
    { path: 'article', component: ArticleComponent },
@@ -42,6 +43,7 @@ const appRoutes: Routes = [
     BlogComponent,
     ProjectComponent,
     ContactMeComponent,
+    VideoPresentationComponent,
  ],
   imports: [
     BrowserModule,

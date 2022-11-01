@@ -99,3 +99,10 @@
     width: 167px;
     filter: invert(1);
 }
+
+
+@media screen and (max-width:900px) {
+   .header .navigation {
+    display: none;
+   }
+}

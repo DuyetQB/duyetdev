@@ -95,6 +95,10 @@
 }
 
 @media screen and (max-width:900px) {
+    .article {
+        padding: 120px 20px 50px 20px;
+    }
+    
     .article .section-list {
         flex-wrap: wrap;
     }

@@ -1,0 +1,54 @@
+<div class="background">
+  <div class="video-area" id="video">
+    <div class="video-content">
+      <span class="video-content__flag">VIDEO PRESENTATION</span>
+      <h2 class="video-content__title">Introducing Metaverse To You</h2>
+    </div>
+
+    <div class="play-video-btn">
+      <button class="video-btn" (click)="onOpenVideo()">
+        <svg class="video-icon">
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop
+                offset="45.86%"
+                style="stop-color: #fdce39; stop-opacity: 1"
+              />
+              <stop
+                offset="72.71%"
+                style="stop-color: #fd8963; stop-opacity: 1"
+              />
+              <stop
+                offset="98.93%"
+                style="stop-color: #ed5174; stop-opacity: 1"
+              />
+            </linearGradient>
+          </defs>
+          <g>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="46"
+              height="46"
+              fill="url(#grad1)"
+              class="bi bi-play-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
+              />
+            </svg>
+          </g>
+        </svg>
+      </button>
+    </div>
+    
+</div>
+<div class="box-content" *ngIf="video.isOpen">
+    <!-- <img src="{{ showDiv.imageSrc }}" alt="" /> -->
+    <!-- <span class="text-title">{{ showDiv.title }}</span> -->
+    <iframe width="718" height="404" src="https://www.youtube.com/embed/n-H116jm2wE" title="Introducing Metaverse and unbox Hololens 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <span class="material-symbols-outlined icon-close" (click)="onClose()"> close </span>
+  </div>
+</div>
+
+<div class="box-background" *ngIf="video.isOpen"></div>
