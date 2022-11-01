@@ -134,10 +134,7 @@
 
 }
 
-.background .box-content iframe {
-   width:100%;
 
-}
 
 .background .box-content .icon-close {
     position: absolute;
@@ -164,4 +161,8 @@
     .play-video-btn {
         right: 12%;
     }
+    .background .box-content iframe {
+        width:100%;
+     
+     }
  }
